@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fddddd;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+:root{
+  --ivory: #F9F1F0;
+  --mansala: #663635;
+  --rosewater: #E1999F;
+  --dusty-rose: #DEB3AD;
+}
+
+h2{
+  margin: 0;
+}
+
+.show_menu{
+  display: flex;
+}
+.hide_menu{
+  display: none;
+}
+.Nav{
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,.8);
+}
+.Nav ul{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.Nav li{
+  list-style: none;
+  margin: 0 1rem;
+  color: #b12968;
+  cursor: pointer;
+  font-size: 15px;
+}
+.Nav li:hover{
+  color: #F9F1F0;
+}
+.Nav button{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  padding: 0;
+  font-size: 2rem;
+  background-color: transparent;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 10px;
+  border: 1px solid #b12968;
+  align-self: flex-end;
+}
+.Nav button:hover{
+  background-color: #b12968;
+}
+.active{
+  color: #F9F1F0;
+  border-bottom: 2px solid #F9F1F0;
+}
+
+.Home{
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(166deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 71%, rgba(135,36,100,1) 86%, rgba(129,51,99,1) 100%);
+  padding-top: 5rem;
+}
+.Home>.wrapper{
+  display: flex;
+  padding: 0 2rem;
+  justify-content: space-around;
+}
+.Home>.wrapper img{
+  width: 25rem;
+  object-fit: cover;
+}
+.Home>.wrapper section{
+  flex: 1;
+  padding: 2rem;
+  text-align: left;
+}
+.Home>.wrapper h1{
+  margin: 1rem 0;
+  font-size: 4vw;
+  color: #b12968;
+}
+.Home>.wrapper h3{
+  color: #a88b87;
+  margin: 1rem 0;
+  font-size: 2vw;
+}
+.Home>.wrapper p{
+  color: #a88b87;
+}
+
+
+.Cert{
+  padding: 5rem 1rem 0;
+  height: 100vh;
+}
+.Cert h2{
+  padding: 1rem;
+  color: #663635;
+}
+.Cert img{
+  width: 25rem;
+  margin: 1rem;  
+}
+
+.MyStudy{
+  padding-top: 5rem;
+  height: 100vh;
+  text-transform: uppercase;
+}
+.MyStudy header{
+  padding: 2rem 0;
+}
+.MyStudy img{
+  width: 15rem;
+  border-radius: 50%;
+}
+.MyStudy h2{
+  color:#6e4e49;
+}
+.MyStudy section{
+  margin-top: 1rem;
+}
+
+.Contact{
+  height: 100vh;
+  padding-top: 5rem;
+}
+.Contact header{
+  padding: 2rem;
+  color: #663635;
+}
+.Contact section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+.email_wapper{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.Contact textarea{
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  height: 6rem;
+  width: 25rem;
+  margin: .5rem 0;
+  padding: 1rem;
+}
+.Contact button{
+  border: none;
+  outline: none;
+  padding: .5rem 2rem;
+  border-radius: 1rem;
+  background-color: #b12968;
+  color: #FFF;
+  cursor: pointer;
+  width: fit-content;
+  margin-bottom: 3rem;
+}
+.Contact button:hover{
+  background-color: #971a55;
+}
+.Contact a{
+  text-decoration: none;
+  color: #FFF;
+  background-color: #365abd;
+  padding: .5rem 1rem;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .Home>.wrapper{
+    flex-direction: column;
+  }
+  .Home>.wrapper, .Contact section{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .email_wapper{
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Nav{
+    flex-direction: column;
+    color: #F9F1F0;
+    padding: .5rem 0;
+  }
+  .Nav ul{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .Nav li{
+    color: #F9F1F0;
+    margin-bottom: 2rem;
+  }
+  .Nav button{
+    display: flex;
+    color: #F9F1F0;
+    margin-right: 1rem;
+  }
+  .Home>.wrapper img{
+    width: 15rem;
+    height: 22rem;
+  }
+  .Home>.wrapper h1{
+    font-size: 2rem;
+  }
+  .Home>.wrapper h3{
+    font-size: 1rem;
+  }
+  .Cert img{
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .Contact textarea{
+    width: 100%;
+  }
+}
+
