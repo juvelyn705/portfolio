@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.c027a9d1.css",
+    "main.js": "/portfolio/static/js/main.fd96dd06.js",
+    "static/js/787.011204bd.chunk.js": "/portfolio/static/js/787.011204bd.chunk.js",
+    "static/media/my-profile.png": "/portfolio/static/media/my-profile.290f0dad611f3bc7912d.png",
+    "static/media/certificate_2.jpg": "/portfolio/static/media/certificate_2.01b8d0cf150d1b5c8e66.jpg",
+    "static/media/nemsu_logo.jpg": "/portfolio/static/media/nemsu_logo.f957f33513d42e53b786.jpg",
+    "static/media/certificate_1.jpg": "/portfolio/static/media/certificate_1.9b32ee36b8230f3875d6.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.c027a9d1.css.map": "/portfolio/static/css/main.c027a9d1.css.map",
+    "main.fd96dd06.js.map": "/portfolio/static/js/main.fd96dd06.js.map",
+    "787.011204bd.chunk.js.map": "/portfolio/static/js/787.011204bd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c027a9d1.css",
+    "static/js/main.fd96dd06.js"
+  ]
+}
